@@ -1,19 +1,19 @@
 'use strict'
 const http =require ('http')
-
+const fs = require('fs')
+const path = require('path')
+const router = require('./router')
 const port = process.env.PORT || 8081
 
-const server =http.createServer()
+const server = http.createServer()
 
-server.on('request',onRequest)
+server.on('request', router)
 server.on('listening', onListening)
 
 server.listen(port)
 
-function onRequest(req,res){
-	res.end('Hello io.js')
-}
+
 
 function onListening(){
-	console.log('Servidor escuchando en puerto' + port)
+	console.log(`Servidor escuchando en puerto ${port}`)
 }

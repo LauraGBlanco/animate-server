@@ -14,9 +14,15 @@
     ""
   ],
   "author": "LauraGBlanco <lagoblanco@gmail.com>",
-  "license": "BSD", 
-  "bugs":{
-    "url" : "https://github.com/LauraGBlanco/animate-server/issues"
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/LauraGBlanco/animate-server/issues"
   },
-  "homepage": "https://github.com/LauraGBlanco/animate-server"
+  "homepage": "https://github.com/LauraGBlanco/animate-server",
+  "dependencies": {
+    "st": "^1.1.0"
+  },
+  "devDependencies": {
+    "st": "^1.1.0"
+  }
 }
