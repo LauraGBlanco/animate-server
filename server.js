@@ -1,11 +1,12 @@
 'use strict'
 const http =require ('http')
-const fs = require('fs')
-const path = require('path')
+
 const router = require('./router')
-const port = process.env.PORT || 8081
 
 const server = http.createServer()
+const port = process.env.PORT || 8081
+
+
 
 server.on('request', router)
 server.on('listening', onListening)

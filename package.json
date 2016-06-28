@@ -4,15 +4,14 @@
   "description": "A realtime chat",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run build-js",
+    "build-js": "browserify client/app.js -o public/app.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "http://github.com/LauraGBlanco/animate-server"
   },
-  "keywords": [
-    ""
-  ],
   "author": "LauraGBlanco <lagoblanco@gmail.com>",
   "license": "BSD",
   "bugs": {
@@ -20,9 +19,13 @@
   },
   "homepage": "https://github.com/LauraGBlanco/animate-server",
   "dependencies": {
-    "st": "^1.1.0"
+    "body": "^5.1.0",
+    "course": "0.0.1",
+    "st": "^1.1.0",
+    "webrtc2images": "^1.4.4",
+    "xhr": "^2.2.0"
   },
   "devDependencies": {
-    "st": "^1.1.0"
+    "browserify": "^13.0.1"
   }
 }
