@@ -37,6 +37,10 @@ record.addEventListener('click', function(e){
 
    })
  },  false)
+
+ function logError (err) {
+   console.error(err)
+}
 },{"webrtc2images":2,"xhr":12}],2:[function(require,module,exports){
 var Streamer = require('./lib/streamer');
 var Recorder = require('./lib/recorder');
